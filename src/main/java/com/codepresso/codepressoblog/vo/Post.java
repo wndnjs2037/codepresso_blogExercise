@@ -3,7 +3,7 @@ package com.codepresso.codepressoblog.vo;
 import java.util.Date;
 import java.util.List;
 
-public class Post {
+public class Post { // 멤버변수 선언, 생성자, getter, setter 선언
 
     Integer id;
     String title;
@@ -17,10 +17,6 @@ public class Post {
         this.content = content;
         this.username = username;
         this.createdAt = createdAt;
-    }
-
-    public Post() {
-
     }
 
     public Integer getId() {

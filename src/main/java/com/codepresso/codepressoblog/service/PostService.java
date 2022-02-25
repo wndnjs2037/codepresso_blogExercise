@@ -8,10 +8,8 @@ import java.util.List;
 @Service
 public class PostService {
 
-    PostMapper postMapper;
-
+    private PostMapper postMapper;
     public PostService(PostMapper postMapper) { this.postMapper = postMapper; }
-
     public List<Post> getPostList() { return postMapper.findAll();}
 
     public List<Post> getPostDetail(int id){
